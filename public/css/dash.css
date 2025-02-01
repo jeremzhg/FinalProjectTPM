@@ -1,0 +1,265 @@
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+
+.dashboard-container,
+.profile-section,
+.timeline-container,
+.footer-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #040404;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: auto;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.nav-links a {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 25px;
+  transition: color 0.3s;
+}
+
+
+.nav-links a:first-child {
+  margin-left: 20px;
+}
+
+.nav-links a:hover {
+  color: #6D93AA;
+}
+
+
+.logout-btn {
+  width: 120px;
+  height: 50px;
+  border-radius: 50px;
+  background: linear-gradient(38deg, #2C3B44 38%, #6D93AA 100%);
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+
+
+
+  .profile-section {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    background-color: #525D65;
+    height: 800px;
+    margin-bottom: 0;
+  }
+
+  .team-title {
+    color: #fff;
+    text-align: center;
+    align-self: start;
+    font: 700 96px/1 Poppins, sans-serif;
+    margin-left: 35px;
+    transform: translateY(40px);
+  }
+
+  .profile-content {
+    margin-left: 10px;
+    margin-top: 41px;
+    display: flex;
+    gap: 60px;
+  }
+
+  .profile-image-section {
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+  }
+
+  .profile-image {
+    aspect-ratio: 1.56;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-items: center;
+    }
+
+    .image-container {
+        width: 800px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    }
+  .cv-button {
+    border-radius: 60px;
+    background-color: rgba(217, 217, 217, 1);
+    align-self: center;
+    margin-top: 39px;
+    width: 221px;
+    padding: 7px 60px;
+    border: 2px solid #000;
+    font: 700 16px/2 Poppins, sans-serif;
+  }
+
+  .profile-details {
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-grid {
+    display: flex;
+    gap: 20px;
+  }
+
+  .personal-info {
+    width: 60%;
+    color: #fff;
+    font: 400 24px/2 Poppins, sans-serif;
+  }
+
+  .contact-info {
+    width: 40%;
+    color: #fff;
+    font: 400 24px/2 Poppins, sans-serif;
+  }
+
+  .info-label {
+    font-weight: 400;
+  }
+
+  .info-value {
+    font-weight: 700;
+    margin-top: 5px;
+  }
+
+  .github-section {
+    margin-top: -100px;
+    width: 40%;
+    color: #fff;
+    font: 400 24px/2 Poppins, sans-serif;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+
+
+
+  .timeline-container {
+    width: 100%;
+  }
+
+
+
+
+
+  .footer-container {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-top: 0;
+    background-color: black;
+    width: full;
+  }
+
+  .footer-title {
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-size: 80px;
+    margin-left: 65px;
+  }
+
+  .footer-pic {
+    height: 70px;
+    margin-left: 65px;
+    margin-bottom: 25px;
+  }
+
+  .phone {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-people {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    margin-left: 50px;
+  }
+
+  .insta {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .insta-techno {
+    color: #fff;
+    margin-left: 50px;
+    font-family: poppins, sans-serif;
+  }
