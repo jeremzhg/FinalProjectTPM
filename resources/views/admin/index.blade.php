@@ -47,16 +47,16 @@
                     @else
                         <p>Unsupported file format</p>
                     @endif
-                    
+
                     <div class="team-leader">{{ $team->leader_name }}</div>
                     <div class="team-name">{{ $team->team_name }}</div>
-                    <div class="team-actions">
+                    <div class="button-group">
                         <a href="{{ route('admin.show', $team->id) }}" class="view-btn">View</a>
-                        <a href="{{ route('admin.edit', $team->id) }}" class="edit-btn">Edit</a>
+                        <a href="{{ route('admin.edit', $team->id) }}" class="view-btn">Edit</a>
                         <form action="{{ route('admin.destroy', $team->id) }}" method="POST" class="delete-form">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="delete-btn">Delete</button>
+                            <button type="submit" class="view-btn">Delete</button>
                         </form>
                     </div>
                 </div>

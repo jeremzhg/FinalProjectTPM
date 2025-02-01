@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     box-sizing: border-box;
   }
 
@@ -112,14 +112,18 @@ html, body {
     margin-top: 9px;
   }
   .view-btn {
-    border-radius: 40px;
-    background-color: rgba(0, 0, 0, 1);
-    width: 94px;
-    font-size: 15px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 600;
-    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    line-height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
+    transition: background 0.3s ease;
   }
   .visually-hidden {
     position: absolute;
@@ -131,6 +135,15 @@ html, body {
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
+  .button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-form {
+    display: inline-block;
+}
   @media (max-width: 1250px) {
     .admin-container {
       padding-bottom: 100px;
@@ -163,7 +176,15 @@ html, body {
       margin-top: 40px;
     }
     .view-btn {
-      white-space: initial;
-      padding: 0 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff; /* Blue color */
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px; /* Makes it rounded */
+        cursor: pointer;
+        transition: background 0.3s ease;
     }
   }
